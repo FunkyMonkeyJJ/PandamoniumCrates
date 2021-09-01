@@ -1,0 +1,36 @@
+name: PandamoniumCrates
+version: 1.0
+main: yhw.panda.pandamoniumcrates.PandamoniumCrates
+api-version: 1.16
+commands:
+  listcrates:
+    description: Lists the crates.
+    permission: pandacrates.list
+  loadcrates:
+    description: Loads the crates from the config.yml file.
+    permission: pandacrates.load
+  savecrates:
+    description: Saves the config.yml file.
+    permission: pandacrates.save
+  swapkeys:
+    description: Swaps out any keys in the players inventory with the new keys.
+  addcrate:
+    description: Adds the current container that you're looking at as a crate.
+    permission: pandacrates.add
+  setcrate:
+    description: Sets the given crate at the location you're looking at.
+    permission: pandacrates.set
+  delcrate:
+    description: Deletes the given crate.
+    permission: pandacrates.delete
+  givekey:
+    description: Gives the given amount of keys for a crate to the given player.
+    permission: pandacrates.givekey
+  setcommand:
+    description: 'Sets a command to the item in the user`s hand.
+    When obtained from a crate, the command will trigger rather
+    than the item being won.'
+    permission: pandacrates.setcommand
+  delcommand:
+    description: Deletes the command from the item in the user`s hand.
+    permission: pandacrates.delcommand
